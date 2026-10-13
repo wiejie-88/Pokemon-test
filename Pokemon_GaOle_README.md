@@ -12,11 +12,6 @@ A turn-based Pokémon battle-and-catch game for the terminal, written in Java. S
 - **Catching:** win a battle to draw a random Poké Ball and try to catch the wild Pokémon.
 - **Leaderboard:** the top five trainers by total score are shown after every game.
 
-## Requirements
-
-- **JDK 21 or newer.** The code uses qualified enum constants in `switch` cases, which need Java 21. The Eclipse project is set to Java 22.
-- **A desktop with a display.** The mini-games open Swing windows, so the game can't run headless (for example over plain SSH).
-- **A terminal with UTF-8 and ANSI support** (macOS Terminal, Windows Terminal and most Linux terminals) so the bold text and ASCII art render correctly.
 
 ## Getting started
 
@@ -152,6 +147,4 @@ To start with a clean leaderboard, empty `player.txt`.
 - **Composition:** a `Pokemon` has a `Move`, a `Player` owns an inventory of `Pokemon`, and `Game` coordinates the `Menu`, `Stage`, `Battle` and `Player`.
 - **Enums:** `Type` holds the type-effectiveness chart behind a single `getEffectiveness` lookup.
 
-## Disclaimer
 
-Pokémon and all related names are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc. This is an unofficial fan project made for learning and is not affiliated with or endorsed by them.
